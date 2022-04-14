@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BED9C19428085CEF007EE654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19328085CEF007EE654 /* AppDelegate.swift */; };
+		BED9C19628085CEF007EE654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19528085CEF007EE654 /* SceneDelegate.swift */; };
+		BED9C19828085CEF007EE654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19728085CEF007EE654 /* ViewController.swift */; };
+		BED9C19B28085CEF007EE654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED9C19928085CEF007EE654 /* Main.storyboard */; };
+		BED9C19E28085CEF007EE654 /* FindMyVacci.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19C28085CEF007EE654 /* FindMyVacci.xcdatamodeld */; };
+		BED9C1A028085CF3007EE654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED9C19F28085CF3007EE654 /* Assets.xcassets */; };
+		BED9C1A328085CF3007EE654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED9C1A128085CF3007EE654 /* LaunchScreen.storyboard */; };
+		BED9C1AE28085CF3007EE654 /* FindMyVacciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C1AD28085CF3007EE654 /* FindMyVacciTests.swift */; };
+		BED9C1B928085CF3007EE654 /* FindMyVacciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C1B828085CF3007EE654 /* FindMyVacciUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BED9C1AA28085CF3007EE654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED9C18828085CEF007EE654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED9C18F28085CEF007EE654;
+			remoteInfo = FindMyVacci;
+		};
+		BED9C1B528085CF3007EE654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED9C18828085CEF007EE654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED9C18F28085CEF007EE654;
+			remoteInfo = FindMyVacci;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BED9C19028085CEF007EE654 /* FindMyVacci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyVacci.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED9C19328085CEF007EE654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BED9C19528085CEF007EE654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BED9C19728085CEF007EE654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BED9C19A28085CEF007EE654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BED9C19D28085CEF007EE654 /* FindMyVacci.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FindMyVacci.xcdatamodel; sourceTree = "<group>"; };
+		BED9C19F28085CF3007EE654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED9C1A228085CF3007EE654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BED9C1A428085CF3007EE654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED9C1A928085CF3007EE654 /* FindMyVacciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyVacciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED9C1AD28085CF3007EE654 /* FindMyVacciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyVacciTests.swift; sourceTree = "<group>"; };
+		BED9C1AF28085CF3007EE654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED9C1B428085CF3007EE654 /* FindMyVacciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyVacciUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED9C1B828085CF3007EE654 /* FindMyVacciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyVacciUITests.swift; sourceTree = "<group>"; };
+		BED9C1BA28085CF3007EE654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BED9C18D28085CEF007EE654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED9C1A628085CF3007EE654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED9C1B128085CF3007EE654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BED9C18728085CEF007EE654 = {
+			isa = PBXGroup;
+			children = (
+				BED9C19228085CEF007EE654 /* FindMyVacci */,
+				BED9C1AC28085CF3007EE654 /* FindMyVacciTests */,
+				BED9C1B728085CF3007EE654 /* FindMyVacciUITests */,
+				BED9C19128085CEF007EE654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BED9C19128085CEF007EE654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BED9C19028085CEF007EE654 /* FindMyVacci.app */,
+				BED9C1A928085CF3007EE654 /* FindMyVacciTests.xctest */,
+				BED9C1B428085CF3007EE654 /* FindMyVacciUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BED9C19228085CEF007EE654 /* FindMyVacci */ = {
+			isa = PBXGroup;
+			children = (
+				BED9C19328085CEF007EE654 /* AppDelegate.swift */,
+				BED9C19528085CEF007EE654 /* SceneDelegate.swift */,
+				BED9C19728085CEF007EE654 /* ViewController.swift */,
+				BED9C19928085CEF007EE654 /* Main.storyboard */,
+				BED9C19F28085CF3007EE654 /* Assets.xcassets */,
+				BED9C1A128085CF3007EE654 /* LaunchScreen.storyboard */,
+				BED9C1A428085CF3007EE654 /* Info.plist */,
+				BED9C19C28085CEF007EE654 /* FindMyVacci.xcdatamodeld */,
+			);
+			path = FindMyVacci;
+			sourceTree = "<group>";
+		};
+		BED9C1AC28085CF3007EE654 /* FindMyVacciTests */ = {
+			isa = PBXGroup;
+			children = (
+				BED9C1AD28085CF3007EE654 /* FindMyVacciTests.swift */,
+				BED9C1AF28085CF3007EE654 /* Info.plist */,
+			);
+			path = FindMyVacciTests;
+			sourceTree = "<group>";
+		};
+		BED9C1B728085CF3007EE654 /* FindMyVacciUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BED9C1B828085CF3007EE654 /* FindMyVacciUITests.swift */,
+				BED9C1BA28085CF3007EE654 /* Info.plist */,
+			);
+			path = FindMyVacciUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BED9C18F28085CEF007EE654 /* FindMyVacci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED9C1BD28085CF3007EE654 /* Build configuration list for PBXNativeTarget "FindMyVacci" */;
+			buildPhases = (
+				BED9C18C28085CEF007EE654 /* Sources */,
+				BED9C18D28085CEF007EE654 /* Frameworks */,
+				BED9C18E28085CEF007EE654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyVacci;
+			productName = FindMyVacci;
+			productReference = BED9C19028085CEF007EE654 /* FindMyVacci.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BED9C1A828085CF3007EE654 /* FindMyVacciTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED9C1C028085CF3007EE654 /* Build configuration list for PBXNativeTarget "FindMyVacciTests" */;
+			buildPhases = (
+				BED9C1A528085CF3007EE654 /* Sources */,
+				BED9C1A628085CF3007EE654 /* Frameworks */,
+				BED9C1A728085CF3007EE654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED9C1AB28085CF3007EE654 /* PBXTargetDependency */,
+			);
+			name = FindMyVacciTests;
+			productName = FindMyVacciTests;
+			productReference = BED9C1A928085CF3007EE654 /* FindMyVacciTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BED9C1B328085CF3007EE654 /* FindMyVacciUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED9C1C328085CF3007EE654 /* Build configuration list for PBXNativeTarget "FindMyVacciUITests" */;
+			buildPhases = (
+				BED9C1B028085CF3007EE654 /* Sources */,
+				BED9C1B128085CF3007EE654 /* Frameworks */,
+				BED9C1B228085CF3007EE654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED9C1B628085CF3007EE654 /* PBXTargetDependency */,
+			);
+			name = FindMyVacciUITests;
+			productName = FindMyVacciUITests;
+			productReference = BED9C1B428085CF3007EE654 /* FindMyVacciUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BED9C18828085CEF007EE654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BED9C18F28085CEF007EE654 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BED9C1A828085CF3007EE654 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BED9C18F28085CEF007EE654;
+					};
+					BED9C1B328085CF3007EE654 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BED9C18F28085CEF007EE654;
+					};
+				};
+			};
+			buildConfigurationList = BED9C18B28085CEF007EE654 /* Build configuration list for PBXProject "FindMyVacci" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BED9C18728085CEF007EE654;
+			productRefGroup = BED9C19128085CEF007EE654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BED9C18F28085CEF007EE654 /* FindMyVacci */,
+				BED9C1A828085CF3007EE654 /* FindMyVacciTests */,
+				BED9C1B328085CF3007EE654 /* FindMyVacciUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BED9C18E28085CEF007EE654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED9C1A328085CF3007EE654 /* LaunchScreen.storyboard in Resources */,
+				BED9C1A028085CF3007EE654 /* Assets.xcassets in Resources */,
+				BED9C19B28085CEF007EE654 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED9C1A728085CF3007EE654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED9C1B228085CF3007EE654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BED9C18C28085CEF007EE654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED9C19828085CEF007EE654 /* ViewController.swift in Sources */,
+				BED9C19E28085CEF007EE654 /* FindMyVacci.xcdatamodeld in Sources */,
+				BED9C19428085CEF007EE654 /* AppDelegate.swift in Sources */,
+				BED9C19628085CEF007EE654 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED9C1A528085CF3007EE654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED9C1AE28085CF3007EE654 /* FindMyVacciTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED9C1B028085CF3007EE654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED9C1B928085CF3007EE654 /* FindMyVacciUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BED9C1AB28085CF3007EE654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED9C18F28085CEF007EE654 /* FindMyVacci */;
+			targetProxy = BED9C1AA28085CF3007EE654 /* PBXContainerItemProxy */;
+		};
+		BED9C1B628085CF3007EE654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED9C18F28085CEF007EE654 /* FindMyVacci */;
+			targetProxy = BED9C1B528085CF3007EE654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BED9C19928085CEF007EE654 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED9C19A28085CEF007EE654 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BED9C1A128085CF3007EE654 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED9C1A228085CF3007EE654 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BED9C1BB28085CF3007EE654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BED9C1BC28085CF3007EE654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BED9C1BE28085CF3007EE654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyVacci/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.FindMyVacci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BED9C1BF28085CF3007EE654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyVacci/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.FindMyVacci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BED9C1C128085CF3007EE654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyVacciTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.FindMyVacciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyVacci.app/FindMyVacci";
+			};
+			name = Debug;
+		};
+		BED9C1C228085CF3007EE654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyVacciTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.FindMyVacciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyVacci.app/FindMyVacci";
+			};
+			name = Release;
+		};
+		BED9C1C428085CF3007EE654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyVacciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.FindMyVacciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyVacci;
+			};
+			name = Debug;
+		};
+		BED9C1C528085CF3007EE654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyVacciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.FindMyVacciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyVacci;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BED9C18B28085CEF007EE654 /* Build configuration list for PBXProject "FindMyVacci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED9C1BB28085CF3007EE654 /* Debug */,
+				BED9C1BC28085CF3007EE654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED9C1BD28085CF3007EE654 /* Build configuration list for PBXNativeTarget "FindMyVacci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED9C1BE28085CF3007EE654 /* Debug */,
+				BED9C1BF28085CF3007EE654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED9C1C028085CF3007EE654 /* Build configuration list for PBXNativeTarget "FindMyVacciTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED9C1C128085CF3007EE654 /* Debug */,
+				BED9C1C228085CF3007EE654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED9C1C328085CF3007EE654 /* Build configuration list for PBXNativeTarget "FindMyVacciUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED9C1C428085CF3007EE654 /* Debug */,
+				BED9C1C528085CF3007EE654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BED9C19C28085CEF007EE654 /* FindMyVacci.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BED9C19D28085CEF007EE654 /* FindMyVacci.xcdatamodel */,
+			);
+			currentVersion = BED9C19D28085CEF007EE654 /* FindMyVacci.xcdatamodel */;
+			path = FindMyVacci.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BED9C18828085CEF007EE654 /* Project object */;
+}
