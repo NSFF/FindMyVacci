@@ -19,11 +19,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        // tableView.dataSource = self
+        // tableView.delegate = self
+        
         fetchVacci()
     }
     
     func fetchVacci(){
-        // Fetch data from core data
+        // Fetch data from core data to display in Table View
+        do{
+            self.items = try context.fetch(VaccinationCentre.fetchRequest())
+            
+            DispatchQueue.main.async {
+                //tableView.reloadData()
+            }
+        }
+        catch{
+            
+        }
+        
     }
 
 
