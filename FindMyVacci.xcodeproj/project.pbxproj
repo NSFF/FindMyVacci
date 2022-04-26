@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE6DF6EA28186FE500275214 /* VaccinationCentre+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DF6E828186FE500275214 /* VaccinationCentre+CoreDataClass.swift */; };
 		BED9C19428085CEF007EE654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19328085CEF007EE654 /* AppDelegate.swift */; };
 		BED9C19628085CEF007EE654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19528085CEF007EE654 /* SceneDelegate.swift */; };
 		BED9C19828085CEF007EE654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19728085CEF007EE654 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE6DF6E828186FE500275214 /* VaccinationCentre+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VaccinationCentre+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BED9C19028085CEF007EE654 /* FindMyVacci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyVacci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED9C19328085CEF007EE654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED9C19528085CEF007EE654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		BE6DF6C228186A2C00275214 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE6DF6E828186FE500275214 /* VaccinationCentre+CoreDataClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				BED9C19E28085CEF007EE654 /* FindMyVacci.xcdatamodeld in Sources */,
 				BED9C19428085CEF007EE654 /* AppDelegate.swift in Sources */,
 				BED9C19628085CEF007EE654 /* SceneDelegate.swift in Sources */,
+				BE6DF6EA28186FE500275214 /* VaccinationCentre+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
