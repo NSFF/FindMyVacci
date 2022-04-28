@@ -14,7 +14,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
     // Data for the TableView
-    var items:[VaccinationCentre]?
+    var items:[VacciCentre]?
     
     var locationManager = CLLocationManager()
     
@@ -35,16 +35,19 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
 
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        var coordinate = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
-        var region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        let center = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+        
         mapView.setRegion(region, animated: true)
     }
+    
+
     
     
     func fetchVacci(){
         // Fetch data from core data to display in Table View
         do{
-            self.items = try context.fetch(VaccinationCentre.fetchRequest())
+            self.items = try context.fetch(VacciCentre.fetchRequest())
             
             DispatchQueue.main.async {
                 //tableView.reloadData()
