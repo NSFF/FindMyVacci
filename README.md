@@ -52,3 +52,4 @@ Image Pop-up: https://www.youtube.com/watch?v=V0LQbDGbdbI
 Optionals and unwrapping errors/guide: https://stackoverflow.com/questions/32170456/what-does-fatal-error-unexpectedly-found-nil-while-unwrapping-an-optional-valu
 
 Loading an image into an UIImage var: https://stackoverflow.com/questions/37574689/how-to-load-image-from-local-path-ios-swift-by-path
+Loading a file from relative path: https://forums.swift.org/t/relative-file-url-and-swift-scripts/30479/3
