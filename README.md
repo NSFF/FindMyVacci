@@ -21,6 +21,8 @@ Xcode Version 12.4 (12D4e)
 
 +Adding custom photo from photo library and having a default one
 
++When tapping the photo preview during the "adding a new vacci centre" process, it brings a pop-up of the image in a bigger version.
+
 -Not Automaticly zooming on user location
 
 -No Map annotations of Vaccination Centres
