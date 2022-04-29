@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cg-bi-oEB">
-                                <rect key="frame" x="169" y="522" width="37" height="30"/>
+                                <rect key="frame" x="169" y="568" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <segue destination="ieD-hZ-BoP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="cec-e5-7sB"/>
@@ -94,12 +94,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Image:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL5-7j-01C">
-                                <rect key="frame" x="132" y="409" width="111" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vacci name ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8E-UD-EEQ">
                                 <rect key="frame" x="128.5" y="83" width="118" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -135,6 +129,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGS-eF-J6o">
+                                <rect key="frame" x="150.5" y="405" width="74" height="30"/>
+                                <state key="normal" title="Add Image"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_Vacci_Centre.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Uo1-IS-CiB">
+                                <rect key="frame" x="152" y="434" width="71" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="LpP-i2-D2U"/>
+                                    <constraint firstAttribute="height" constant="46" id="Yxr-1g-JXD"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zDK-kh-tOk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -145,26 +150,28 @@
                             <constraint firstItem="dOZ-9I-H59" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="CWp-Kc-ZDy"/>
                             <constraint firstItem="dOZ-9I-H59" firstAttribute="top" secondItem="zDK-kh-tOk" secondAttribute="top" constant="10" id="EBl-4j-eLU"/>
                             <constraint firstItem="YUp-9K-8Uo" firstAttribute="top" secondItem="cjU-jM-AGc" secondAttribute="bottom" constant="8" symbolic="YES" id="EME-ux-dgR"/>
+                            <constraint firstItem="Uo1-IS-CiB" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="ExK-db-RwM"/>
                             <constraint firstItem="zDK-kh-tOk" firstAttribute="trailing" secondItem="hAX-01-bfz" secondAttribute="trailing" constant="57" id="F5Z-Gh-MiI"/>
                             <constraint firstItem="Idh-H5-hfA" firstAttribute="top" secondItem="Dtk-d1-htq" secondAttribute="bottom" constant="8" symbolic="YES" id="GLV-yS-L0g"/>
                             <constraint firstItem="5TV-uh-JV6" firstAttribute="leading" secondItem="zDK-kh-tOk" secondAttribute="leading" constant="61" id="GMK-iY-vXc"/>
-                            <constraint firstItem="QL5-7j-01C" firstAttribute="top" secondItem="5TV-uh-JV6" secondAttribute="bottom" constant="8" symbolic="YES" id="Gmw-OO-M07"/>
                             <constraint firstItem="cjU-jM-AGc" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="ISy-9Y-hIj"/>
                             <constraint firstItem="zDK-kh-tOk" firstAttribute="trailing" secondItem="kdQ-hc-c9l" secondAttribute="trailing" constant="40" id="Kxf-io-vsd"/>
                             <constraint firstItem="kdQ-hc-c9l" firstAttribute="top" secondItem="YUp-9K-8Uo" secondAttribute="bottom" constant="8" symbolic="YES" id="KyI-Sj-Ocw"/>
                             <constraint firstItem="ewP-At-b8E" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="PGy-1k-HkI"/>
                             <constraint firstItem="kuJ-AP-EjO" firstAttribute="top" secondItem="Fa9-dv-AeM" secondAttribute="bottom" constant="8" symbolic="YES" id="QDT-dN-Jiy"/>
+                            <constraint firstItem="jGS-eF-J6o" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="QLP-6k-tsy"/>
                             <constraint firstItem="zDK-kh-tOk" firstAttribute="trailing" secondItem="YUp-9K-8Uo" secondAttribute="trailing" constant="40" id="QzZ-B6-46o"/>
                             <constraint firstItem="X8E-UD-EEQ" firstAttribute="top" secondItem="zDK-kh-tOk" secondAttribute="top" constant="39" id="RxJ-MD-kc9"/>
-                            <constraint firstItem="zDK-kh-tOk" firstAttribute="bottom" secondItem="4Cg-bi-oEB" secondAttribute="bottom" constant="66" id="Sih-tR-25Z"/>
-                            <constraint firstItem="QL5-7j-01C" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="UKn-4T-wNI"/>
+                            <constraint firstItem="zDK-kh-tOk" firstAttribute="bottom" secondItem="4Cg-bi-oEB" secondAttribute="bottom" constant="20" id="Sih-tR-25Z"/>
                             <constraint firstItem="Idh-H5-hfA" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="WLO-lh-i4P"/>
                             <constraint firstItem="ewP-At-b8E" firstAttribute="top" secondItem="Idh-H5-hfA" secondAttribute="bottom" constant="8" symbolic="YES" id="ZPp-Qc-lQc"/>
                             <constraint firstItem="Tdv-lw-Il2" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="bp6-IA-9T4"/>
                             <constraint firstItem="Fa9-dv-AeM" firstAttribute="top" secondItem="cjU-jM-AGc" secondAttribute="bottom" constant="8" symbolic="YES" id="c6E-dt-mjE"/>
+                            <constraint firstItem="Uo1-IS-CiB" firstAttribute="top" secondItem="Tdv-lw-Il2" secondAttribute="bottom" constant="75" id="gcB-Xy-wZH"/>
                             <constraint firstItem="cjU-jM-AGc" firstAttribute="top" secondItem="ewP-At-b8E" secondAttribute="bottom" constant="8" symbolic="YES" id="h7w-ar-OJH"/>
                             <constraint firstItem="X8E-UD-EEQ" firstAttribute="centerX" secondItem="zDK-kh-tOk" secondAttribute="centerX" id="kj2-SU-BqY"/>
                             <constraint firstItem="kdQ-hc-c9l" firstAttribute="leading" secondItem="kuJ-AP-EjO" secondAttribute="trailing" constant="50" id="mhT-uc-XIc"/>
+                            <constraint firstItem="jGS-eF-J6o" firstAttribute="top" secondItem="5TV-uh-JV6" secondAttribute="bottom" constant="4" id="pJR-LU-XNy"/>
                             <constraint firstItem="Tdv-lw-Il2" firstAttribute="top" secondItem="kuJ-AP-EjO" secondAttribute="bottom" constant="8" symbolic="YES" id="qPl-RG-pM6"/>
                             <constraint firstItem="Dtk-d1-htq" firstAttribute="top" secondItem="X8E-UD-EEQ" secondAttribute="bottom" constant="8" symbolic="YES" id="sXH-U5-rAg"/>
                             <constraint firstItem="YUp-9K-8Uo" firstAttribute="leading" secondItem="Fa9-dv-AeM" secondAttribute="trailing" constant="30" id="urY-mK-dzQ"/>
@@ -272,6 +279,7 @@
         <segue reference="cec-e5-7sB"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="default_Vacci_Centre.jpeg" width="694" height="463"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">

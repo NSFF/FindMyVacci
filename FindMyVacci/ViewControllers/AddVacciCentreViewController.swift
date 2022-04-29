@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddVacciCentreViewController: UIViewController {
+class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +25,6 @@ class AddVacciCentreViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
