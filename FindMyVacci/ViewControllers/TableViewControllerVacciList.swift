@@ -28,11 +28,6 @@ class TableViewControllerVacciList: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    // getter for directory folder
-    var documentsUrl: URL {
-        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-    }
-    
     // Load image
     private func load(fileName: String) -> UIImage? {
         let fileURL = URL(fileURLWithPath: #file.replacingOccurrences(of: "ViewControllers/TableViewControllerVacciList.swift", with: "") + fileName)
