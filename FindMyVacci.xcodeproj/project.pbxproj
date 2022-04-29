@@ -14,13 +14,14 @@
 		BE6DF71A2819C41E00275214 /* VacciCentre+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DF7182819C41E00275214 /* VacciCentre+CoreDataClass.swift */; };
 		BED9C19428085CEF007EE654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19328085CEF007EE654 /* AppDelegate.swift */; };
 		BED9C19628085CEF007EE654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19528085CEF007EE654 /* SceneDelegate.swift */; };
-		BED9C19828085CEF007EE654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19728085CEF007EE654 /* ViewController.swift */; };
+		BED9C19828085CEF007EE654 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19728085CEF007EE654 /* MapViewController.swift */; };
 		BED9C19B28085CEF007EE654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED9C19928085CEF007EE654 /* Main.storyboard */; };
 		BED9C19E28085CEF007EE654 /* FindMyVacci.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED9C19C28085CEF007EE654 /* FindMyVacci.xcdatamodeld */; };
 		BED9C1A028085CF3007EE654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED9C19F28085CF3007EE654 /* Assets.xcassets */; };
 		BED9C1A328085CF3007EE654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED9C1A128085CF3007EE654 /* LaunchScreen.storyboard */; };
 		BED9C1AE28085CF3007EE654 /* FindMyVacciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C1AD28085CF3007EE654 /* FindMyVacciTests.swift */; };
 		BED9C1B928085CF3007EE654 /* FindMyVacciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C1B828085CF3007EE654 /* FindMyVacciUITests.swift */; };
+		BEDB78F7281C26B400B1675C /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,7 @@
 		BED9C19028085CEF007EE654 /* FindMyVacci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyVacci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED9C19328085CEF007EE654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED9C19528085CEF007EE654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BED9C19728085CEF007EE654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BED9C19728085CEF007EE654 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BED9C19A28085CEF007EE654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BED9C19D28085CEF007EE654 /* FindMyVacci.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FindMyVacci.xcdatamodel; sourceTree = "<group>"; };
 		BED9C19F28085CF3007EE654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		BED9C1B428085CF3007EE654 /* FindMyVacciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyVacciUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED9C1B828085CF3007EE654 /* FindMyVacciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyVacciUITests.swift; sourceTree = "<group>"; };
 		BED9C1BA28085CF3007EE654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,8 @@
 		BE6741FF281B324400BD1CD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BED9C19728085CEF007EE654 /* ViewController.swift */,
+				BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */,
+				BED9C19728085CEF007EE654 /* MapViewController.swift */,
 				BE6DF6FD2819926800275214 /* TableViewControllerVacciList.swift */,
 				BE6741FA281B2B7800BD1CD9 /* AddVacciCentreViewController.swift */,
 			);
@@ -326,13 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BED9C19828085CEF007EE654 /* ViewController.swift in Sources */,
+				BED9C19828085CEF007EE654 /* MapViewController.swift in Sources */,
 				BED9C19E28085CEF007EE654 /* FindMyVacci.xcdatamodeld in Sources */,
 				BED9C19428085CEF007EE654 /* AppDelegate.swift in Sources */,
 				BED9C19628085CEF007EE654 /* SceneDelegate.swift in Sources */,
 				BE6DF6FE2819926800275214 /* TableViewControllerVacciList.swift in Sources */,
 				BE6741FB281B2B7800BD1CD9 /* AddVacciCentreViewController.swift in Sources */,
 				BE6DF71A2819C41E00275214 /* VacciCentre+CoreDataClass.swift in Sources */,
+				BEDB78F7281C26B400B1675C /* ImageDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

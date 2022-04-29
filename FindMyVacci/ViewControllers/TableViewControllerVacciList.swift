@@ -45,6 +45,9 @@ class TableViewControllerVacciList: UITableViewController {
         return cell
     }
     
+    @IBAction func unwindToTableViewController(_ segue: UIStoryboardSegue){
+        // placeholder to unwind
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -8,7 +8,7 @@ import CoreLocation
 import MapKit
 import UIKit
 
-class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     // Reference to the managed object context (= the core data container)
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -47,7 +47,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func fetchVacci(){
         // Fetch data from core data to display in Table View
-        do{
+        /*do{
             self.items = try context.fetch(VacciCentre.fetchRequest())
             
             DispatchQueue.main.async {
@@ -56,7 +56,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
         catch{
             
-        }
+        }*/
         
     }
 
