@@ -40,7 +40,11 @@ This project was an assignment given by the Erasmus university college Brussels,
 I used several tutorials to help me during this project:
 
 Core data tutorial: https://www.youtube.com/watch?v=O7u9nYWjvKk
+
 Accessing Photo library: https://www.youtube.com/watch?v=J86_F7_exfE
+
 Segue initializing variables error: https://stackoverflow.com/questions/31576232/passing-image-to-another-view-controller-swift
+
 Image Pop-up: https://www.youtube.com/watch?v=V0LQbDGbdbI
+
 
