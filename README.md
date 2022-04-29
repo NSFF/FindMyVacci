@@ -8,6 +8,25 @@ The app shows a table view of the vaccination centres and if you press on one, i
 
 Xcode Version 12.4 (12D4e)
 
+# Project goals reached
+(+ reached; - not reached)
+
++Tab bar with table view of Vaccination centres
+
++Tab bar with map view and user location
+
++Asking permissions for using user location
+
++Adding New Vaccination Centre
+
++Adding custom photo from photo library and having a default one
+
+-Not Automaticly zooming on user location
+
+-No Map annotations of Vaccination Centres
+
+-No info preview when clicking a vaccination centre annotation
+
 # Known Bugs
 
 * Map not automaticly zooming in to user location
