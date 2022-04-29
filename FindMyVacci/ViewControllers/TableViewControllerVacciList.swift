@@ -9,16 +9,41 @@ import UIKit
 
 class TableViewControllerVacciList: UITableViewController {
 
+    var vacciList:[VacciCentre] = []
+    
     var test = ["test1","test2","test3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        let defaultiImage = load(fileName:"Images/default_Vacci_Centre.jpeg")
+    
+        
+        vacciList.append(VacciCentre(name:"Pacheco", municipality:"Brussels", street:"Bd Pachéco 13", zipCode:1000, phoneNumber:"+32454113255", gps:[50.852891844045274, 4.3632796], image:defaultiImage!))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    // getter for directory folder
+    var documentsUrl: URL {
+        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    }
+    
+    // Load image
+    private func load(fileName: String) -> UIImage? {
+        let fileURL = URL(fileURLWithPath: #file.replacingOccurrences(of: "ViewControllers/TableViewControllerVacciList.swift", with: "") + fileName)
+                          
+        do {
+            let imageData = try Data(contentsOf: fileURL)
+            return UIImage(data: imageData)
+        } catch {
+            print("Error loading image : \(error)")
+        }
+        return nil
     }
 
     // MARK: - Table view data source

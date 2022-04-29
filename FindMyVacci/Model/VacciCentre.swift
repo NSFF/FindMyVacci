@@ -18,7 +18,7 @@ class VacciCentre {
     var gps:[Float]
     var image:UIImage
     
-    init(name:String, gps:[Float], image:UIImage, municipality:String, street:String, zipCode:Int, phoneNumber:String) {
+    init(name:String, municipality:String, street:String, zipCode:Int, phoneNumber:String, gps:[Float], image:UIImage) {
         self.name = name
         self.municipality = municipality
         self.street = street
