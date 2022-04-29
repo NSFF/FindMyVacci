@@ -1,16 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1824" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="VacciCentre" representedClassName="VacciCentre" syncable="YES" codeGenerationType="category">
-        <attribute name="gps" optional="YES" attributeType="Transformable"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="image" optional="YES" attributeType="Transformable" valueTransformerName="UIImage"/>
-        <attribute name="municipality" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="phonenumber" optional="YES" attributeType="String"/>
-        <attribute name="street" optional="YES" attributeType="String"/>
-        <attribute name="zipcode" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-    </entity>
-    <elements>
-        <element name="VacciCentre" positionX="-63" positionY="-18" width="128" height="163"/>
-    </elements>
+    <elements/>
 </model>

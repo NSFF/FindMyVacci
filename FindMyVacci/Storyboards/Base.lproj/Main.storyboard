@@ -55,7 +55,7 @@
                                 <rect key="frame" x="169" y="568" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <segue destination="ieD-hZ-BoP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="cec-e5-7sB"/>
+                                    <segue destination="ieD-hZ-BoP" kind="presentation" identifier="addVacciCentreSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="cec-e5-7sB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vaccination Centre Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOZ-9I-H59">
@@ -204,7 +204,7 @@
                 <exit id="fTz-WW-gQA" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="7n7-rq-XJ9">
                     <connections>
-                        <segue destination="7ou-5g-3W0" kind="presentation" identifier="imageDetail" id="jM4-yG-Grr"/>
+                        <segue destination="7ou-5g-3W0" kind="presentation" identifier="imageDetailSegue" id="jM4-yG-Grr"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

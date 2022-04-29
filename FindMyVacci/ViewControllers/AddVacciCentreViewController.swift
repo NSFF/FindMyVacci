@@ -39,12 +39,19 @@ class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDel
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "imageDetail" {
+        if segue.identifier == "imageDetailSegue" {
             let controller = segue.destination as! ImageDetailViewController
             controller.newImage = imageView.image
         }
+        
+        /*if segue.identifier == "addVacciCentreSegue" {
+            let controller = segue.destination as! TableViewControllerVacciList
+            
+        }*/
     }
     
+    
+    // used for the back button to unwind
     @IBAction func unwindToTableViewController(_ segue: UIStoryboardSegue){
         // placeholder to unwind
     }
