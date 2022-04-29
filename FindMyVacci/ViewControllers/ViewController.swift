@@ -32,6 +32,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if CLLocationManager.locationServicesEnabled(){
             locationManager.startUpdatingLocation()
         }
+        
     }
 
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {

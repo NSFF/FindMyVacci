@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1824" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="VacciCentre" representedClassName="VacciCentre" syncable="YES" codeGenerationType="category">
         <attribute name="gps" optional="YES" attributeType="Transformable"/>
-        <attribute name="housenumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="image" optional="YES" attributeType="Transformable"/>
         <attribute name="municipality" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>

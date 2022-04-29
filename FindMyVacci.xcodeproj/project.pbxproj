@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE6741FB281B2B7800BD1CD9 /* AddVacciCentreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6741FA281B2B7800BD1CD9 /* AddVacciCentreViewController.swift */; };
 		BE6DF6FE2819926800275214 /* TableViewControllerVacciList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6DF6FD2819926800275214 /* TableViewControllerVacciList.swift */; };
 		BE6DF70428199E9E00275214 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6DF70328199E9E00275214 /* MapKit.framework */; };
 		BE6DF70B2819BB4E00275214 /* default_Vacci_Centre.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BE6DF70A2819BB4E00275214 /* default_Vacci_Centre.jpeg */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE6741FA281B2B7800BD1CD9 /* AddVacciCentreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVacciCentreViewController.swift; sourceTree = "<group>"; };
 		BE6DF6FD2819926800275214 /* TableViewControllerVacciList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerVacciList.swift; sourceTree = "<group>"; };
 		BE6DF70328199E9E00275214 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BE6DF70A2819BB4E00275214 /* default_Vacci_Centre.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default_Vacci_Centre.jpeg; sourceTree = "<group>"; };
@@ -87,9 +89,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE6741FF281B324400BD1CD9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BED9C19728085CEF007EE654 /* ViewController.swift */,
+				BE6DF6FD2819926800275214 /* TableViewControllerVacciList.swift */,
+				BE6741FA281B2B7800BD1CD9 /* AddVacciCentreViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BE674200281B327600BD1CD9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BED9C19928085CEF007EE654 /* Main.storyboard */,
+				BED9C1A128085CF3007EE654 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BE674201281B328F00BD1CD9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BED9C19528085CEF007EE654 /* SceneDelegate.swift */,
+				BED9C19328085CEF007EE654 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		BE6DF6C228186A2C00275214 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BED9C19C28085CEF007EE654 /* FindMyVacci.xcdatamodeld */,
 				BE6DF7182819C41E00275214 /* VacciCentre+CoreDataClass.swift */,
 			);
 			path = Model;
@@ -135,17 +166,13 @@
 		BED9C19228085CEF007EE654 /* FindMyVacci */ = {
 			isa = PBXGroup;
 			children = (
+				BE674201281B328F00BD1CD9 /* Delegates */,
+				BE674200281B327600BD1CD9 /* Storyboards */,
+				BE6741FF281B324400BD1CD9 /* ViewControllers */,
 				BE6DF7092819BB2900275214 /* Images */,
 				BE6DF6C228186A2C00275214 /* Model */,
-				BED9C19328085CEF007EE654 /* AppDelegate.swift */,
-				BED9C19528085CEF007EE654 /* SceneDelegate.swift */,
-				BED9C19728085CEF007EE654 /* ViewController.swift */,
-				BED9C19928085CEF007EE654 /* Main.storyboard */,
-				BE6DF6FD2819926800275214 /* TableViewControllerVacciList.swift */,
 				BED9C19F28085CF3007EE654 /* Assets.xcassets */,
-				BED9C1A128085CF3007EE654 /* LaunchScreen.storyboard */,
 				BED9C1A428085CF3007EE654 /* Info.plist */,
-				BED9C19C28085CEF007EE654 /* FindMyVacci.xcdatamodeld */,
 			);
 			path = FindMyVacci;
 			sourceTree = "<group>";
@@ -304,6 +331,7 @@
 				BED9C19428085CEF007EE654 /* AppDelegate.swift in Sources */,
 				BED9C19628085CEF007EE654 /* SceneDelegate.swift in Sources */,
 				BE6DF6FE2819926800275214 /* TableViewControllerVacciList.swift in Sources */,
+				BE6741FB281B2B7800BD1CD9 /* AddVacciCentreViewController.swift in Sources */,
 				BE6DF71A2819C41E00275214 /* VacciCentre+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
