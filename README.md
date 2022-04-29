@@ -47,4 +47,4 @@ Segue initializing variables error: https://stackoverflow.com/questions/31576232
 
 Image Pop-up: https://www.youtube.com/watch?v=V0LQbDGbdbI
 
-
+Optionals and unwrapping errors/guide: https://stackoverflow.com/questions/32170456/what-does-fatal-error-unexpectedly-found-nil-while-unwrapping-an-optional-valu
