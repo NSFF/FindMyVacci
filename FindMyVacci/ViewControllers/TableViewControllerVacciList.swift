@@ -56,11 +56,18 @@ class TableViewControllerVacciList: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewVacciList", for: indexPath)
 
-        var config = cell.defaultContentConfiguration()
-        config.text = vacciList[indexPath.row].name
+        //var config = cell.defaultContentConfiguration()
+        //config.text = vacciList[indexPath.row].name
+        // config.image = vacciList[indexPath.row].image
+        //cell.contentConfiguration = config
         
-        cell.contentConfiguration = config
+        cell.textLabel?.text = vacciList[indexPath.row].name
+        // adjust size in case of long names
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
         
+        cell.detailTextLabel?.text = vacciList[indexPath.row].municipality
+        cell.imageView?.image = vacciList[indexPath.row].image
+
         return cell
     }
     
