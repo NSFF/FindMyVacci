@@ -55,16 +55,21 @@ class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDel
         
         if segue.identifier == "unwindToVacciListDone" {
             let controller = segue.destination as! TableViewControllerVacciList
-
+        
             controller.vacciList.append(VacciCentre(name:vacciName.text!,
                                                     municipality:municipality.text!,
                                                     street:street.text!,
                                                     zipCode:Int(zipCode.text!)!,
                                                     phoneNumber:phoneNumber.text!,
-                                                    gps: [Double(latitude.text!), Double(longitude.text!)],
+                                                    gps: [Double(latitude.text!)!, Double(longitude.text!)!],
                                                     image:imageView.image!))
             
             controller.tableView.reloadData()
+            
+            let mapController = controller.tabBarController!.viewControllers![1] as! MapViewController
+            mapController.vacciList = controller.vacciList
+            mapController.viewDidLoad()
+            //mapController.removeAllAnnotations()
         }
     }
     

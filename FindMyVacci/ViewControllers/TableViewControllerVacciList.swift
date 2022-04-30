@@ -20,6 +20,9 @@ class TableViewControllerVacciList: UITableViewController {
         vacciList.append(VacciCentre(name:"Pacheco", municipality:"Brussels", street:"Bd Pachéco 13", zipCode:1000, phoneNumber:"+32454113255", gps:[50.852891844045274, 4.3632796], image:defaultiImage!))
         vacciList.append(VacciCentre(name:"Point Vaccination", municipality:"Molenbeek", street:"Chau. de Gand 696", zipCode:1080, phoneNumber:"022141919", gps:[50.860205133203145, 4.30742968465714], image:defaultiImage!))
         
+        let controller = self.tabBarController!.viewControllers![1] as! MapViewController
+        controller.vacciList = vacciList
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

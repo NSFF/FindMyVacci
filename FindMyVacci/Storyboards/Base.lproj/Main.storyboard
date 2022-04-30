@@ -218,7 +218,7 @@
                     <connections>
                         <outlet property="imageView" destination="Uo1-IS-CiB" id="PGr-vh-7hg"/>
                         <outlet property="latitude" destination="5TV-uh-JV6" id="udx-TS-8VO"/>
-                        <outlet property="longitude" destination="kdQ-hc-c9l" id="j7e-10-DBD"/>
+                        <outlet property="longitude" destination="hAX-01-bfz" id="5vZ-r8-QwB"/>
                         <outlet property="municipality" destination="Idh-H5-hfA" id="ByZ-85-9Af"/>
                         <outlet property="phoneNumber" destination="kdQ-hc-c9l" id="D6y-Jv-Lj7"/>
                         <outlet property="street" destination="cjU-jM-AGc" id="FfG-cS-KsA"/>
@@ -290,6 +290,9 @@
                     <navigationItem key="navigationItem" title="Vaccination Centre Map" id="SGY-oX-Adu">
                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" style="plain" id="oAg-Kt-80R"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="i1V-Ws-dKA" id="kEI-dM-YJ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

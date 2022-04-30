@@ -12,18 +12,15 @@ import MapKit
 class VacciDetailViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var navBar: UINavigationItem!
-    
     @IBOutlet weak var addressLabel: UILabel!
-    
     @IBOutlet weak var phoneNumberLabel: UILabel!
-    
     @IBOutlet weak var imageView: UIImageView!
     
     var myImageView: UIImage?
     var myAddress:String?
     var myTitle:String?
     var myPhoneNumber:String?
-    var gps:[Double?]?
+    var gps:[Double?] = []
     
     var locationManager = CLLocationManager()
     
@@ -45,7 +42,7 @@ class VacciDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         
         let annotation = MKPointAnnotation()
         annotation.title = myTitle
-        annotation.coordinate = CLLocationCoordinate2D(latitude: gps![0]!, longitude: gps![1]!)
+        annotation.coordinate = CLLocationCoordinate2D(latitude: gps[0]!, longitude: gps[1]!)
         self.mapView.addAnnotation(annotation)
         
         
@@ -64,9 +61,6 @@ class VacciDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         let center = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
-        
-        //mapView.setRegion(region, animated: true)
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
