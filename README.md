@@ -64,3 +64,5 @@ Converting text to Int: https://developer.apple.com/forums/thread/677100
 Adding Title/subtitle/image to table view: https://stackoverflow.com/questions/5190648/why-is-detailtextlabel-not-visible
 
 Passing variables to other viewControllers without segue: https://stackoverflow.com/questions/39494454/pass-data-between-viewcontroller-and-tabbarcontroller
+
+Removing MapAnnotations: https://stackoverflow.com/questions/32850094/how-do-i-remove-all-map-annotations-in-swift-2
