@@ -62,3 +62,5 @@ Refresh viewTable: https://www.youtube.com/watch?v=BtMa52KShm0
 Converting text to Int: https://developer.apple.com/forums/thread/677100
 
 Adding Title/subtitle/image to table view: https://stackoverflow.com/questions/5190648/why-is-detailtextlabel-not-visible
+
+Passing variables to other viewControllers without segue: https://stackoverflow.com/questions/39494454/pass-data-between-viewcontroller-and-tabbarcontroller
