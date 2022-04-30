@@ -68,11 +68,7 @@ class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDel
         }
     }
     
-    
-    // used for the back button to unwind
-    @IBAction func unwindToTableViewController(_ segue: UIStoryboardSegue){
-        // placeholder to unwind
-    }
+
     
     
     /*

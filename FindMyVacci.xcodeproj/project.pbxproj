@@ -24,6 +24,7 @@
 		BEDB78F7281C26B400B1675C /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */; };
 		BEE95747281D3554003245CF /* VacciListTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE95746281D3554003245CF /* VacciListTabBarController.swift */; };
 		BEE9574C281D3584003245CF /* VacciListNavigatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9574B281D3584003245CF /* VacciListNavigatorController.swift */; };
+		BEE9575D281D69F2003245CF /* VacciDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9575C281D69F2003245CF /* VacciDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		BEE95746281D3554003245CF /* VacciListTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacciListTabBarController.swift; sourceTree = "<group>"; };
 		BEE9574B281D3584003245CF /* VacciListNavigatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacciListNavigatorController.swift; sourceTree = "<group>"; };
+		BEE9575C281D69F2003245CF /* VacciDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacciDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		BE6741FF281B324400BD1CD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BEE9575C281D69F2003245CF /* VacciDetailViewController.swift */,
 				BEE9574B281D3584003245CF /* VacciListNavigatorController.swift */,
 				BEE95746281D3554003245CF /* VacciListTabBarController.swift */,
 				BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */,
@@ -343,6 +346,7 @@
 				BE6999C2281C80BF003662C9 /* VacciCentre.swift in Sources */,
 				BED9C19628085CEF007EE654 /* SceneDelegate.swift in Sources */,
 				BE6DF6FE2819926800275214 /* TableViewControllerVacciList.swift in Sources */,
+				BEE9575D281D69F2003245CF /* VacciDetailViewController.swift in Sources */,
 				BE6741FB281B2B7800BD1CD9 /* AddVacciCentreViewController.swift in Sources */,
 				BEDB78F7281C26B400B1675C /* ImageDetailViewController.swift in Sources */,
 			);

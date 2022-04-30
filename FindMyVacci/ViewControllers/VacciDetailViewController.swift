@@ -1,27 +1,34 @@
 //
-//  ImageDetailViewController.swift
+//  VacciDetailViewController.swift
 //  FindMyVacci
 //
-//  Created by Huei Li Yap on 29/04/2022.
+//  Created by Huei Li Yap on 30/04/2022.
 //
 
 import UIKit
 
-class ImageDetailViewController: UIViewController {
-
+class VacciDetailViewController: UIViewController {
+    
+    @IBOutlet weak var navBar: UINavigationItem!
+    
+    @IBOutlet weak var addressLabel: UILabel!
+    
     @IBOutlet weak var imageView: UIImageView!
-    var newImage: UIImage!
+    
+    var myImageView: UIImage?
+    var myAddress:String?
+    var myTitle:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        imageView.image = newImage
 
-        // Do any additional setup after loading the view.
+        navBar.title = myTitle
+        addressLabel.text = myAddress
+        imageView.image = myImageView
     }
     
     
-
+    
     /*
     // MARK: - Navigation
 

@@ -75,6 +75,18 @@ class TableViewControllerVacciList: UITableViewController {
         // placeholder to unwind
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "vacciDetailSegue" {
+            let controller = segue.destination as! VacciDetailViewController
+            let indexPath = self.tableView.indexPathForSelectedRow
+            
+            controller.myTitle = vacciList[indexPath!.row].name
+            
+            controller.myAddress = String(vacciList[indexPath!.row].zipCode) + " " + vacciList[indexPath!.row].municipality + ", " + vacciList[indexPath!.row].street
+            
+            controller.myImageView = vacciList[indexPath!.row].image
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
