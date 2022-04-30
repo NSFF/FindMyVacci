@@ -58,3 +58,5 @@ Loading a file from relative path: https://forums.swift.org/t/relative-file-url-
 Passing data with unwind segue: https://stackoverflow.com/questions/35313747/passing-data-with-unwind-segue
 
 Refresh viewTable: https://www.youtube.com/watch?v=BtMa52KShm0
+
+Converting text to Int: https://developer.apple.com/forums/thread/677100
