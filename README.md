@@ -60,3 +60,5 @@ Passing data with unwind segue: https://stackoverflow.com/questions/35313747/pas
 Refresh viewTable: https://www.youtube.com/watch?v=BtMa52KShm0
 
 Converting text to Int: https://developer.apple.com/forums/thread/677100
+
+Adding Title/subtitle/image to table view: https://stackoverflow.com/questions/5190648/why-is-detailtextlabel-not-visible
