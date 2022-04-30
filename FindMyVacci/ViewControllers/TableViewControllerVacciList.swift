@@ -86,6 +86,7 @@ class TableViewControllerVacciList: UITableViewController {
             
             controller.myImageView = vacciList[indexPath!.row].image
             controller.myPhoneNumber = vacciList[indexPath!.row].phoneNumber
+            controller.gps = vacciList[indexPath!.row].gps
         }
     }
 

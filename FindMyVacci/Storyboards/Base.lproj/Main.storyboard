@@ -381,6 +381,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="f5a-Nd-7HH" id="q6B-ye-XfL"/>
                         <outlet property="imageView" destination="p6q-2C-g8O" id="O8D-7N-eIK"/>
+                        <outlet property="mapView" destination="e9u-hG-nOL" id="auy-F4-cgG"/>
                         <outlet property="navBar" destination="eDq-BZ-ZVC" id="FtN-EY-k8W"/>
                         <outlet property="phoneNumberLabel" destination="Kuo-Uo-6TG" id="Ts8-Ut-hKl"/>
                     </connections>

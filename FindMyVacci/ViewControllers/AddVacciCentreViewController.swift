@@ -61,7 +61,7 @@ class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDel
                                                     street:street.text!,
                                                     zipCode:Int(zipCode.text!)!,
                                                     phoneNumber:phoneNumber.text!,
-                                                    gps: [Float(latitude.text!), Float(longitude.text!)],
+                                                    gps: [Double(latitude.text!), Double(longitude.text!)],
                                                     image:imageView.image!))
             
             controller.tableView.reloadData()
