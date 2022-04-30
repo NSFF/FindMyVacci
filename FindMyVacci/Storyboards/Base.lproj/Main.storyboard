@@ -253,7 +253,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt; Back"/>
                                 <connections>
-                                    <segue destination="PVg-74-5O7" kind="unwind" unwindAction="unwindToTableViewController:" id="1Kp-Fc-sGD"/>
+                                    <segue destination="PVg-74-5O7" kind="unwind" unwindAction="unwindToAddVacciCentreController:" id="7oD-bg-Ftn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -345,13 +345,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6q-2C-g8O">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6q-2C-g8O">
                                 <rect key="frame" x="0.0" y="106" width="375" height="154"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="osh-xm-shn"/>
                                     <constraint firstAttribute="height" constant="154" id="vvP-RR-8ik"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="C7C-Mw-ANA" appends="YES" id="HLC-9m-Xfy"/>
+                                </connections>
                             </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="e9u-hG-nOL">
+                                <rect key="frame" x="0.0" y="259" width="375" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6sI-l5-eX5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -369,6 +377,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEN-mA-vvl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="UYk-42-mf9" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="C7C-Mw-ANA">
+                    <connections>
+                        <segue destination="wi1-x5-BKm" kind="presentation" identifier="vacciDetailToImageDetailSegue" id="lxc-Oa-5VL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1957.5999999999999" y="-730.88455772113946"/>
         </scene>
@@ -408,6 +421,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcT-hG-AAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="80.799999999999997" y="16.641679160419791"/>
+        </scene>
+        <!--Image Detail-->
+        <scene sceneID="kBd-yO-4AM">
+            <objects>
+                <viewController id="wi1-x5-BKm" customClass="ImageDetailViewController" customModule="FindMyVacci" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="muA-aq-eMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kER-ga-zwW">
+                                <rect key="frame" x="0.0" y="56" width="375" height="591"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zu-bE-RZt">
+                                <rect key="frame" x="16" y="10" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt; Back"/>
+                                <connections>
+                                    <segue destination="v7M-QX-jjq" kind="unwind" unwindAction="unwindToVacciDetailViewController:" id="xxQ-LJ-TT4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Erh-y0-jYF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image Detail" id="2cw-qt-pTz"/>
+                    <connections>
+                        <outlet property="imageView" destination="kER-ga-zwW" id="77A-TI-tIL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYQ-R9-WCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="v7M-QX-jjq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2801" y="-731"/>
         </scene>
     </scenes>
     <resources>

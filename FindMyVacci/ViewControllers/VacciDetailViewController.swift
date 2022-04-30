@@ -27,6 +27,17 @@ class VacciDetailViewController: UIViewController {
         imageView.image = myImageView
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "vacciDetailToImageDetailSegue" {
+            let controller = segue.destination as! ImageDetailViewController
+            controller.newImage = imageView.image
+        }
+    }
+    
+    @IBAction func unwindToVacciDetailViewController(_ segue: UIStoryboardSegue){
+        // placeholder to unwind
+    }
+    
     
     
     /*

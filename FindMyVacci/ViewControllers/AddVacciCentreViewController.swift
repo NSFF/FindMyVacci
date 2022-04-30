@@ -68,6 +68,10 @@ class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDel
         }
     }
     
+    @IBAction func unwindToAddVacciCentreController(_ segue: UIStoryboardSegue){
+        // placeholder to unwind
+    }
+    
 
     
     
