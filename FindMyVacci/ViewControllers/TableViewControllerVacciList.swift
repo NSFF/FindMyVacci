@@ -85,6 +85,7 @@ class TableViewControllerVacciList: UITableViewController {
             controller.myAddress = String(vacciList[indexPath!.row].zipCode) + " " + vacciList[indexPath!.row].municipality + ", " + vacciList[indexPath!.row].street
             
             controller.myImageView = vacciList[indexPath!.row].image
+            controller.myPhoneNumber = vacciList[indexPath!.row].phoneNumber
         }
     }
 

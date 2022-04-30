@@ -347,26 +347,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6q-2C-g8O">
-                                <rect key="frame" x="0.0" y="106" width="375" height="154"/>
+                                <rect key="frame" x="0.0" y="127" width="375" height="177"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="USw-23-fda"/>
                                     <constraint firstAttribute="width" constant="375" id="osh-xm-shn"/>
-                                    <constraint firstAttribute="height" constant="154" id="vvP-RR-8ik"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="C7C-Mw-ANA" appends="YES" id="HLC-9m-Xfy"/>
                                 </connections>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="e9u-hG-nOL">
-                                <rect key="frame" x="0.0" y="259" width="375" height="408"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9u-hG-nOL">
+                                <rect key="frame" x="0.0" y="304" width="375" height="363"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuo-Uo-6TG">
+                                <rect key="frame" x="16" y="98" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6sI-l5-eX5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Kuo-Uo-6TG" firstAttribute="top" secondItem="f5a-Nd-7HH" secondAttribute="bottom" id="JmH-24-SPV"/>
                             <constraint firstItem="f5a-Nd-7HH" firstAttribute="leading" secondItem="6sI-l5-eX5" secondAttribute="leading" constant="10" id="PIQ-sf-amr"/>
-                            <constraint firstItem="p6q-2C-g8O" firstAttribute="top" secondItem="f5a-Nd-7HH" secondAttribute="bottom" constant="8" symbolic="YES" id="QFQ-Qy-790"/>
+                            <constraint firstItem="p6q-2C-g8O" firstAttribute="top" secondItem="Kuo-Uo-6TG" secondAttribute="bottom" constant="8" symbolic="YES" id="awY-kv-X6U"/>
+                            <constraint firstItem="Kuo-Uo-6TG" firstAttribute="leading" secondItem="6sI-l5-eX5" secondAttribute="leading" constant="16" id="cYm-Hm-Pq8"/>
                             <constraint firstItem="f5a-Nd-7HH" firstAttribute="top" secondItem="6sI-l5-eX5" secondAttribute="top" constant="77" id="nKH-ly-mx9"/>
                         </constraints>
                     </view>
@@ -374,6 +382,7 @@
                         <outlet property="addressLabel" destination="f5a-Nd-7HH" id="q6B-ye-XfL"/>
                         <outlet property="imageView" destination="p6q-2C-g8O" id="O8D-7N-eIK"/>
                         <outlet property="navBar" destination="eDq-BZ-ZVC" id="FtN-EY-k8W"/>
+                        <outlet property="phoneNumberLabel" destination="Kuo-Uo-6TG" id="Ts8-Ut-hKl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEN-mA-vvl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
