@@ -22,6 +22,8 @@
 		BED9C1AE28085CF3007EE654 /* FindMyVacciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C1AD28085CF3007EE654 /* FindMyVacciTests.swift */; };
 		BED9C1B928085CF3007EE654 /* FindMyVacciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9C1B828085CF3007EE654 /* FindMyVacciUITests.swift */; };
 		BEDB78F7281C26B400B1675C /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */; };
+		BEE95747281D3554003245CF /* VacciListTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE95746281D3554003245CF /* VacciListTabBarController.swift */; };
+		BEE9574C281D3584003245CF /* VacciListNavigatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9574B281D3584003245CF /* VacciListNavigatorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		BED9C1B828085CF3007EE654 /* FindMyVacciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyVacciUITests.swift; sourceTree = "<group>"; };
 		BED9C1BA28085CF3007EE654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		BEE95746281D3554003245CF /* VacciListTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacciListTabBarController.swift; sourceTree = "<group>"; };
+		BEE9574B281D3584003245CF /* VacciListNavigatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacciListNavigatorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		BE6741FF281B324400BD1CD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BEE9574B281D3584003245CF /* VacciListNavigatorController.swift */,
+				BEE95746281D3554003245CF /* VacciListTabBarController.swift */,
 				BEDB78F6281C26B400B1675C /* ImageDetailViewController.swift */,
 				BED9C19728085CEF007EE654 /* MapViewController.swift */,
 				BE6DF6FD2819926800275214 /* TableViewControllerVacciList.swift */,
@@ -329,7 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE95747281D3554003245CF /* VacciListTabBarController.swift in Sources */,
 				BED9C19828085CEF007EE654 /* MapViewController.swift in Sources */,
+				BEE9574C281D3584003245CF /* VacciListNavigatorController.swift in Sources */,
 				BED9C19E28085CEF007EE654 /* FindMyVacci.xcdatamodeld in Sources */,
 				BED9C19428085CEF007EE654 /* AppDelegate.swift in Sources */,
 				BE6999C2281C80BF003662C9 /* VacciCentre.swift in Sources */,

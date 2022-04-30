@@ -11,16 +11,15 @@ class TableViewControllerVacciList: UITableViewController {
 
     var vacciList:[VacciCentre] = []
     
-    var test = ["test1","test2","test3"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let defaultiImage = load(fileName:"Images/default_Vacci_Centre.jpeg")
-    
         
+        // adding 2 default Vacci Centres
         vacciList.append(VacciCentre(name:"Pacheco", municipality:"Brussels", street:"Bd Pachéco 13", zipCode:1000, phoneNumber:"+32454113255", gps:[50.852891844045274, 4.3632796], image:defaultiImage!))
+        vacciList.append(VacciCentre(name:"Point Vaccination", municipality:"Molenbeek", street:"Chau. de Gand 696", zipCode:1080, phoneNumber:"022141919", gps:[50.860205133203145, 4.30742968465714], image:defaultiImage!))
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -50,7 +49,7 @@ class TableViewControllerVacciList: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return test.count
+        return vacciList.count
     }
 
     
@@ -58,8 +57,8 @@ class TableViewControllerVacciList: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewVacciList", for: indexPath)
 
         var config = cell.defaultContentConfiguration()
-        config.text = test[indexPath.row]
-        	
+        config.text = vacciList[indexPath.row].name
+        
         cell.contentConfiguration = config
         
         return cell
@@ -68,6 +67,7 @@ class TableViewControllerVacciList: UITableViewController {
     @IBAction func unwindToTableViewController(_ segue: UIStoryboardSegue){
         // placeholder to unwind
     }
+    
 
     /*
     // Override to support conditional editing of the table view.

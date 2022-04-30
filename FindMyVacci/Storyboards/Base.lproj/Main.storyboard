@@ -55,7 +55,7 @@
                                 <rect key="frame" x="169" y="568" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <segue destination="ieD-hZ-BoP" kind="presentation" identifier="addVacciCentreSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="cec-e5-7sB"/>
+                                    <segue destination="fTz-WW-gQA" kind="unwind" identifier="unwindToVacciListDone" unwindAction="unwindToTableViewController:" id="ba8-D9-L8K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vaccination Centre Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOZ-9I-H59">
@@ -191,13 +191,20 @@
                     <navigationItem key="navigationItem" title="Add a Vaccination Centre" id="M7s-B4-99t">
                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" style="plain" id="tP3-iP-swT">
                             <connections>
-                                <segue destination="fTz-WW-gQA" kind="unwind" unwindAction="unwindToTableViewController:" id="uIb-xS-snT"/>
+                                <segue destination="fTz-WW-gQA" kind="unwind" identifier="unwindToVacciListBack" unwindAction="unwindToTableViewController:" id="uIb-xS-snT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="Uo1-IS-CiB" id="PGr-vh-7hg"/>
+                        <outlet property="latitude" destination="5TV-uh-JV6" id="udx-TS-8VO"/>
+                        <outlet property="longitude" destination="kdQ-hc-c9l" id="j7e-10-DBD"/>
+                        <outlet property="municipality" destination="Idh-H5-hfA" id="ByZ-85-9Af"/>
+                        <outlet property="phoneNumber" destination="kdQ-hc-c9l" id="D6y-Jv-Lj7"/>
+                        <outlet property="street" destination="cjU-jM-AGc" id="FfG-cS-KsA"/>
+                        <outlet property="vacciName" destination="X8E-UD-EEQ" id="2kZ-gL-NjK"/>
+                        <outlet property="zipCode" destination="kuJ-AP-EjO" id="oFA-c8-nCb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ag-uO-zsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -275,7 +282,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wfd-ak-5GH" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" image="list.bullet" catalog="system" id="caY-pP-dXy"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j7j-mq-ylM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j7j-mq-ylM" customClass="VacciListNavigatorController" customModule="FindMyVacci" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -306,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="2800.8000000000002" y="16.641679160419791"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Vacci List Tab Bar Controller-->
         <scene sceneID="EiM-8R-lDL">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ieD-hZ-BoP" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ieD-hZ-BoP" customClass="VacciListTabBarController" customModule="FindMyVacci" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f2H-wi-u67">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

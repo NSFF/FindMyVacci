@@ -11,6 +11,15 @@ class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDel
 
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var vacciName: UITextField!
+    @IBOutlet weak var municipality: UITextField!
+    @IBOutlet weak var street: UITextField!
+    @IBOutlet weak var zipCode: UITextField!
+    @IBOutlet weak var latitude: UITextField!
+    @IBOutlet weak var longitude: UITextField!
+    @IBOutlet weak var phoneNumber: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,10 +53,19 @@ class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDel
             controller.newImage = imageView.image
         }
         
-        /*if segue.identifier == "addVacciCentreSegue" {
+        if segue.identifier == "unwindToVacciListDone" {
             let controller = segue.destination as! TableViewControllerVacciList
+
+            controller.vacciList.append(VacciCentre(name:vacciName.text!,
+                                                    municipality:municipality.text!,
+                                                    street:street.text!,
+                                                    zipCode:Int(zipCode.text!)!,
+                                                    phoneNumber:phoneNumber.text!,
+                                                    gps: [Float(latitude.text!), Float(longitude.text!)],
+                                                    image:imageView.image!))
             
-        }*/
+            controller.tableView.reloadData()
+        }
     }
     
     

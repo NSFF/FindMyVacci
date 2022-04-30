@@ -15,10 +15,10 @@ class VacciCentre {
     
     // I save phoneNumber as String instead of Int because some number use + or #
     var phoneNumber:String
-    var gps:[Float]
+    var gps:[Float?]
     var image:UIImage
     
-    init(name:String, municipality:String, street:String, zipCode:Int, phoneNumber:String, gps:[Float], image:UIImage) {
+    init(name:String, municipality:String, street:String, zipCode:Int, phoneNumber:String, gps:[Float?], image:UIImage) {
         self.name = name
         self.municipality = municipality
         self.street = street
