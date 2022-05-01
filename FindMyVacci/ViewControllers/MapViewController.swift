@@ -46,6 +46,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     /*func addOneAnnotation(){
         let annotation = MKPointAnnotation()
         annotation.title = vacciList.last?.name
+        annotation.subtitle = vacciList.last?.municipality
         let latitude = vacciList.last?.gps[0]!
         let longitude = vacciList.last?.gps[1]!
         annotation.coordinate = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
@@ -58,6 +59,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             let annotation = MKPointAnnotation()
             annotation.coordinate = CLLocationCoordinate2D(latitude: vacciList[i].gps[0]!, longitude: vacciList[i].gps[1]!)
             annotation.title = vacciList[i].name
+            annotation.subtitle = vacciList[i].municipality
+            
             self.mapView.addAnnotation(annotation)
             i = i + 1
         }
@@ -70,11 +73,23 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.setRegion(region, animated: true)
     }
     
+    
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let center = CLLocationCoordinate2D(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
+        
+        view.canShowCallout = true
+        let btn = UIButton(type: .detailDisclosure)
+        view.rightCalloutAccessoryView = btn
+        
+        /* this needs to change, suggested solution: create custom annotation with image within it
+         
+         */
+        // **************************
+        /* let tableController = self.tabBarController!.viewControllers![0] as? TableViewControllerVacciList
+        let img = UIImageView(image: tableController?.defaultImage)
+        view.leftCalloutAccessoryView = img */
+        
+        // **************************
         }
-
-
-
 }
 

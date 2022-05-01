@@ -10,15 +10,16 @@ import UIKit
 class TableViewControllerVacciList: UITableViewController {
 
     var vacciList:[VacciCentre] = []
+    var defaultImage:UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let defaultiImage = load(fileName:"Images/default_Vacci_Centre.jpeg")
+        defaultImage = load(fileName:"Images/default_Vacci_Centre.jpeg")
         
         // adding 2 default Vacci Centres
-        vacciList.append(VacciCentre(name:"Pacheco", municipality:"Brussels", street:"Bd Pachéco 13", zipCode:1000, phoneNumber:"+32454113255", gps:[50.852891844045274, 4.3632796], image:defaultiImage!))
-        vacciList.append(VacciCentre(name:"Point Vaccination", municipality:"Molenbeek", street:"Chau. de Gand 696", zipCode:1080, phoneNumber:"022141919", gps:[50.860205133203145, 4.30742968465714], image:defaultiImage!))
+        vacciList.append(VacciCentre(name:"Pacheco", municipality:"Brussels", street:"Bd Pachéco 13", zipCode:1000, phoneNumber:"+32454113255", gps:[50.852891844045274, 4.3632796], image:defaultImage!))
+        vacciList.append(VacciCentre(name:"Point Vaccination", municipality:"Molenbeek", street:"Chau. de Gand 696", zipCode:1080, phoneNumber:"022141919", gps:[50.860205133203145, 4.30742968465714], image:defaultImage!))
         
         let controller = self.tabBarController!.viewControllers![1] as! MapViewController
         controller.vacciList = vacciList
