@@ -31,7 +31,11 @@ Xcode Version 12.4 (12D4e)
 
 +Tapping the image during the detailed view of a Vacci Centre pops up a bigger image view of that image.
 
+-When tapping an annotation on the map of the tab bar will not show the image of the Vacci Centre, A solution to this would be, making a custom Annotion
+
 # Known Bugs
+
+* Sometimes the map of the tab bar will not zoom in on the user. (I think this bug happens when adding a new Vacci Centre before first tapping the map button)
 
 * Photo library permission is not being asked. This is expected behavior by using UIImagePickerController since IOS 11 because UIImagePickerController is Read only operation
 
