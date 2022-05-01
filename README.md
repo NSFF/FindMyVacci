@@ -68,3 +68,7 @@ Passing variables to other viewControllers without segue: https://stackoverflow.
 Removing MapAnnotations: https://stackoverflow.com/questions/32850094/how-do-i-remove-all-map-annotations-in-swift-2
 
 Deleting rows in Table View: https://medium.com/@leannemlis/add-delete-functionality-to-a-table-view-row-db67349551
+
+Filtering an Array: https://www.codingem.com/filter-an-array-in-swift/
+
+Filtering UserLocation out of annotations array: https://stackoverflow.com/questions/10865088/how-do-i-remove-all-annotations-from-mkmapview-except-the-user-location-annotati
