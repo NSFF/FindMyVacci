@@ -34,6 +34,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.mapView.removeAnnotations(allAnnotations)
     }
     
+    func removeOneAnnotation(index:Int){
+        // we have to filter user location out of annotations
+        let filteredAnnotations = self.mapView.annotations.filter { $0 as! NSObject !== mapView.userLocation
+        }
+        let annotation = filteredAnnotations[index]
+        self.mapView.removeAnnotation(annotation)
+    }
+    
     /*func addOneAnnotation(){
         let annotation = MKPointAnnotation()
         annotation.title = vacciList.last?.name
@@ -50,7 +58,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             annotation.coordinate = CLLocationCoordinate2D(latitude: vacciList[i].gps[0]!, longitude: vacciList[i].gps[1]!)
             annotation.title = vacciList[i].name
             self.mapView.addAnnotation(annotation)
-            
             i = i + 1
         }
     }
@@ -64,7 +71,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let center = CLLocationCoordinate2D(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
-    }
+        }
 
 
 
