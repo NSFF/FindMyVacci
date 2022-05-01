@@ -66,3 +66,5 @@ Adding Title/subtitle/image to table view: https://stackoverflow.com/questions/5
 Passing variables to other viewControllers without segue: https://stackoverflow.com/questions/39494454/pass-data-between-viewcontroller-and-tabbarcontroller
 
 Removing MapAnnotations: https://stackoverflow.com/questions/32850094/how-do-i-remove-all-map-annotations-in-swift-2
+
+Deleting rows in Table View: https://medium.com/@leannemlis/add-delete-functionality-to-a-table-view-row-db67349551
