@@ -13,7 +13,9 @@ Xcode Version 12.4 (12D4e)
 
 +Tab bar with table view of Vaccination centres
 
-+Tab bar with map view and user location
++Tab bar with map view and user location + Vacci centre locations (annotations)
+
++map tab bar centers to user and tapping an annotation gives you extra info of the Vacci Centre
 
 +Asking permissions for using user location
 
@@ -23,15 +25,14 @@ Xcode Version 12.4 (12D4e)
 
 +When tapping the photo preview during the "adding a new vacci centre" process, it brings a pop-up of the image in a bigger version.
 
--Not Automaticly zooming on user location
++Being able to delete Vacci centres in the list (vacci centre table view) by swiping left
 
--No Map annotations of Vaccination Centres
++Tapping a Vacci Centre in the list pops up a detailed view of the Vacci centre with all its information and map location centered on the Annotation
 
--No info preview when clicking a vaccination centre annotation
++Tapping the image during the detailed view of a Vacci Centre pops up a bigger image view of that image.
 
 # Known Bugs
 
-* Map not automaticly zooming in to user location
 * Photo library permission is not being asked. This is expected behavior by using UIImagePickerController since IOS 11 because UIImagePickerController is Read only operation
 
 # Disclaimer
@@ -72,3 +73,5 @@ Deleting rows in Table View: https://medium.com/@leannemlis/add-delete-functiona
 Filtering an Array: https://www.codingem.com/filter-an-array-in-swift/
 
 Filtering UserLocation out of annotations array: https://stackoverflow.com/questions/10865088/how-do-i-remove-all-annotations-from-mkmapview-except-the-user-location-annotati
+
+Making annotation callouts: https://www.hackingwithswift.com/read/16/3/annotations-and-accessory-views-mkpinannotationview
