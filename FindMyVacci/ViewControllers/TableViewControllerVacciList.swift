@@ -107,16 +107,14 @@ class TableViewControllerVacciList: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             
+            
             let mapController = tabBarController!.viewControllers![1] as! MapViewController
+            
+            mapController.loadView()
+            mapController.viewDidLoad()
             mapController.removeOneAnnotation(index: indexPath.row)
             
             vacciList.remove(at: indexPath.row)
-            
-            //mapController.viewDidLoad()
-            //mapController.vacciList = vacciList
-            //mapController.removeAllAnnotations()
-            //mapController.addAllAnnotations()
-            
             
             tableView.deleteRows(at: [indexPath], with: .fade)
         } 

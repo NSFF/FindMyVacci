@@ -67,9 +67,10 @@ class AddVacciCentreViewController: UIViewController, UIImagePickerControllerDel
             controller.tableView.reloadData()
             
             let mapController = controller.tabBarController!.viewControllers![1] as! MapViewController
+            
+            mapController.loadView()
             mapController.vacciList = controller.vacciList
             mapController.viewDidLoad()
-            //mapController.removeAllAnnotations()
         }
     }
     
