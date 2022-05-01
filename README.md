@@ -7,6 +7,7 @@ The app shows a table view of the vaccination centres and if you press on one, i
 # Software used
 
 Xcode Version 12.4 (12D4e)
+
 Tested on Iphone 7th Generation
 
 (Some UI elements might not be positioned correctly on other generation Phones, but I tried)
