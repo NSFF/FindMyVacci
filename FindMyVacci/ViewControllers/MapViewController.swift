@@ -17,7 +17,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        mapView.delegate = self
         
         locationManager.requestWhenInUseAuthorization()
         
@@ -64,7 +65,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         let center = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         
         mapView.setRegion(region, animated: true)
     }

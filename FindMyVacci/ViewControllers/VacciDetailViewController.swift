@@ -29,6 +29,8 @@ class VacciDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        mapView.delegate = self
+        
         navBar.title = myTitle
         addressLabel.text = myAddress
         imageView.image = myImageView
@@ -44,6 +46,7 @@ class VacciDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         annotation.title = myTitle
         annotation.coordinate = CLLocationCoordinate2D(latitude: gps[0]!, longitude: gps[1]!)
         self.mapView.addAnnotation(annotation)
+        self.mapView.selectAnnotation(annotation, animated: true)
         
         
     }
@@ -65,7 +68,7 @@ class VacciDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let center = CLLocationCoordinate2D(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         
         mapView.setRegion(region, animated: true)
     }
